@@ -40,6 +40,13 @@ Original repo: [dokuwiki-plugin-translation](https://github.com/splitbrain/dokuw
 
 Why the patch: fixes the Russian translation on the page `/doku.php/main?do=admin&page=translation`
 
+Install last supported by dokuwiki-2020-07-29a translation plugin version:
+```bash
+wget https://github.com/splitbrain/dokuwiki-plugin-translation/archive/refs/tags/2021-08-23.zip
+unzip 2021-08-23.zip
+# Change name if needed
+```
+
 Apply patch to production:
 ```bash
 patch -p1 -d /var/vhosts/halgebra/wiki < dokuwiki-plugin-translation.fix-ru-lang.patch
